@@ -1,0 +1,21 @@
+//
+//  ContentView.swift
+//  CashApp
+//
+//  Created by Samuel Toh on 5/8/20.
+//  Copyright © 2020 Samuel Toh. All rights reserved.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        Text("Hello, World!")
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
