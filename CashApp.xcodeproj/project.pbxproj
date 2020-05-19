@@ -3,27 +3,116 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C57BE8A737386925F245C6B /* Pods_CashApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB829C76E14DFEB4604227D5 /* Pods_CashApp.framework */; };
+		CD152220246B31550085A18E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15221F246B31550085A18E /* Settings.swift */; };
+		CD152222246B368D0085A18E /* Incomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD152221246B368D0085A18E /* Incomplete.swift */; };
+		CD152224246B4D7D0085A18E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD152223246B4D7D0085A18E /* Notifications.swift */; };
+		CD152226246B4DEA0085A18E /* Purchases.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD152225246B4DEA0085A18E /* Purchases.swift */; };
+		CD152228246B4E070085A18E /* GetHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD152227246B4E070085A18E /* GetHelp.swift */; };
 		CD41A2952465F3D100085A88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2942465F3D100085A88 /* AppDelegate.swift */; };
 		CD41A2972465F3D100085A88 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2962465F3D100085A88 /* SceneDelegate.swift */; };
-		CD41A2992465F3D100085A88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2982465F3D100085A88 /* ContentView.swift */; };
 		CD41A29B2465F3D700085A88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD41A29A2465F3D700085A88 /* Assets.xcassets */; };
 		CD41A29E2465F3D700085A88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD41A29D2465F3D700085A88 /* Preview Assets.xcassets */; };
 		CD41A2A12465F3D700085A88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD41A29F2465F3D700085A88 /* LaunchScreen.storyboard */; };
+		CD41A2B82465F3F500085A88 /* charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2A92465F3F400085A88 /* charleyrivers.jpg */; };
+		CD41A2B92465F3F500085A88 /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2AA2465F3F400085A88 /* turtlerock.jpg */; };
+		CD41A2BA2465F3F500085A88 /* silversalmoncreek.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2AB2465F3F400085A88 /* silversalmoncreek.jpg */; };
+		CD41A2BB2465F3F500085A88 /* icybay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2AC2465F3F400085A88 /* icybay.jpg */; };
+		CD41A2BC2465F3F500085A88 /* lakemcdonald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2AD2465F3F400085A88 /* lakemcdonald.jpg */; };
+		CD41A2BD2465F3F500085A88 /* hiddenlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2AE2465F3F400085A88 /* hiddenlake.jpg */; };
+		CD41A2BE2465F3F500085A88 /* twinlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2AF2465F3F400085A88 /* twinlake.jpg */; };
+		CD41A2BF2465F3F500085A88 /* transactionData.json in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2B02465F3F400085A88 /* transactionData.json */; };
+		CD41A2C02465F3F500085A88 /* umbagog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2B12465F3F500085A88 /* umbagog.jpg */; };
+		CD41A2C22465F3F500085A88 /* chincoteague.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2B32465F3F500085A88 /* chincoteague.jpg */; };
+		CD41A2C32465F3F500085A88 /* yukon_charleyrivers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2B42465F3F500085A88 /* yukon_charleyrivers.jpg */; };
+		CD41A2C42465F3F500085A88 /* stmarylake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2B52465F3F500085A88 /* stmarylake.jpg */; };
+		CD41A2C52465F3F500085A88 /* chilkoottrail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2B62465F3F500085A88 /* chilkoottrail.jpg */; };
+		CD41A2C62465F3F500085A88 /* rainbowlake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2B72465F3F500085A88 /* rainbowlake.jpg */; };
+		CD41A2C82465F40000085A88 /* TransactionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2C72465F40000085A88 /* TransactionDetail.swift */; };
+		CD41A2CA2465F40D00085A88 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2C92465F40D00085A88 /* Transaction.swift */; };
+		CD41A2CC2465F41900085A88 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2CB2465F41900085A88 /* TransactionRow.swift */; };
+		CD41A2CE2465F42100085A88 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2CD2465F42100085A88 /* UserData.swift */; };
+		CD41A2D02465F42700085A88 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2CF2465F42700085A88 /* ProfilePage.swift */; };
+		CD41A2D22465F42C00085A88 /* RegistrationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2D12465F42C00085A88 /* RegistrationForm.swift */; };
+		CD41A2D42465F43000085A88 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2D32465F43000085A88 /* MenuView.swift */; };
+		CD41A2D62465F43700085A88 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2D52465F43700085A88 /* MapView.swift */; };
+		CD41A2D82465F43B00085A88 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2D72465F43B00085A88 /* MainPage.swift */; };
+		CD41A2DC2465F46C00085A88 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2DB2465F46C00085A88 /* Data.swift */; };
+		CD41A2DE24661CB300085A88 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2DD24661CB300085A88 /* CircleImage.swift */; };
+		CD41A2E024661F3400085A88 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2DF24661F3400085A88 /* Profile.swift */; };
+		CD41A2E424675F5400085A88 /* SendPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2E324675F5400085A88 /* SendPayment.swift */; };
+		CD41A2E624676CF000085A88 /* friendData.json in Resources */ = {isa = PBXBuildFile; fileRef = CD41A2E524676CF000085A88 /* friendData.json */; };
+		CD41A2E82467725900085A88 /* FriendRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2E72467725900085A88 /* FriendRow.swift */; };
+		CD41A2EA2467739B00085A88 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2E92467739B00085A88 /* Friend.swift */; };
+		CD41A2F02469B13D00085A88 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2EF2469B13D00085A88 /* MotherView.swift */; };
+		CD41A2F8246A2A8E00085A88 /* PaymentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2F7246A2A8D00085A88 /* PaymentPage.swift */; };
+		CD41A2FA246A3FF400085A88 /* SearchPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2F9246A3FF400085A88 /* SearchPeople.swift */; };
+		CD699DB0246F645F0058582D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DAF246F645F0058582D /* AboutView.swift */; };
+		CD699DBE2470555F0058582D /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DBD2470555F0058582D /* QrCode.swift */; };
+		CD699DC1247069C90058582D /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = CD699DC0247069C90058582D /* CodeScanner */; };
+		CD699DC62470C2120058582D /* CashApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD699DC42470C2120058582D /* CashApp.xcdatamodeld */; };
+		CD699DF02470C7F60058582D /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DEE2470C7F50058582D /* Post+CoreDataProperties.swift */; };
+		CD699DF12470C7F60058582D /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DEF2470C7F60058582D /* Post+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A826819AA2F3C2B15134E5D /* Pods-CashApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashApp.release.xcconfig"; path = "Target Support Files/Pods-CashApp/Pods-CashApp.release.xcconfig"; sourceTree = "<group>"; };
+		9B03E421320F944F6ADD2493 /* Pods-CashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashApp.debug.xcconfig"; path = "Target Support Files/Pods-CashApp/Pods-CashApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD15221F246B31550085A18E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		CD152221246B368D0085A18E /* Incomplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incomplete.swift; sourceTree = "<group>"; };
+		CD152223246B4D7D0085A18E /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		CD152225246B4DEA0085A18E /* Purchases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchases.swift; sourceTree = "<group>"; };
+		CD152227246B4E070085A18E /* GetHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHelp.swift; sourceTree = "<group>"; };
 		CD41A2912465F3D100085A88 /* CashApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CashApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD41A2942465F3D100085A88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD41A2962465F3D100085A88 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD41A2982465F3D100085A88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CD41A29A2465F3D700085A88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD41A29D2465F3D700085A88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CD41A2A02465F3D700085A88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD41A2A22465F3D700085A88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD41A2A92465F3F400085A88 /* charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = charleyrivers.jpg; sourceTree = "<group>"; };
+		CD41A2AA2465F3F400085A88 /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turtlerock.jpg; sourceTree = "<group>"; };
+		CD41A2AB2465F3F400085A88 /* silversalmoncreek.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = silversalmoncreek.jpg; sourceTree = "<group>"; };
+		CD41A2AC2465F3F400085A88 /* icybay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icybay.jpg; sourceTree = "<group>"; };
+		CD41A2AD2465F3F400085A88 /* lakemcdonald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lakemcdonald.jpg; sourceTree = "<group>"; };
+		CD41A2AE2465F3F400085A88 /* hiddenlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hiddenlake.jpg; sourceTree = "<group>"; };
+		CD41A2AF2465F3F400085A88 /* twinlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = twinlake.jpg; sourceTree = "<group>"; };
+		CD41A2B02465F3F400085A88 /* transactionData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactionData.json; sourceTree = "<group>"; };
+		CD41A2B12465F3F500085A88 /* umbagog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbagog.jpg; sourceTree = "<group>"; };
+		CD41A2B32465F3F500085A88 /* chincoteague.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chincoteague.jpg; sourceTree = "<group>"; };
+		CD41A2B42465F3F500085A88 /* yukon_charleyrivers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yukon_charleyrivers.jpg; sourceTree = "<group>"; };
+		CD41A2B52465F3F500085A88 /* stmarylake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stmarylake.jpg; sourceTree = "<group>"; };
+		CD41A2B62465F3F500085A88 /* chilkoottrail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chilkoottrail.jpg; sourceTree = "<group>"; };
+		CD41A2B72465F3F500085A88 /* rainbowlake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbowlake.jpg; sourceTree = "<group>"; };
+		CD41A2C72465F40000085A88 /* TransactionDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetail.swift; sourceTree = "<group>"; };
+		CD41A2C92465F40D00085A88 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CD41A2CB2465F41900085A88 /* TransactionRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		CD41A2CD2465F42100085A88 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		CD41A2CF2465F42700085A88 /* ProfilePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		CD41A2D12465F42C00085A88 /* RegistrationForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationForm.swift; sourceTree = "<group>"; };
+		CD41A2D32465F43000085A88 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		CD41A2D52465F43700085A88 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CD41A2D72465F43B00085A88 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		CD41A2DB2465F46C00085A88 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		CD41A2DD24661CB300085A88 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		CD41A2DF24661F3400085A88 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CD41A2E324675F5400085A88 /* SendPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPayment.swift; sourceTree = "<group>"; };
+		CD41A2E524676CF000085A88 /* friendData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = friendData.json; sourceTree = "<group>"; };
+		CD41A2E72467725900085A88 /* FriendRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRow.swift; sourceTree = "<group>"; };
+		CD41A2E92467739B00085A88 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		CD41A2EF2469B13D00085A88 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		CD41A2F7246A2A8D00085A88 /* PaymentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPage.swift; sourceTree = "<group>"; };
+		CD41A2F9246A3FF400085A88 /* SearchPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPeople.swift; sourceTree = "<group>"; };
+		CD699DAF246F645F0058582D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		CD699DBD2470555F0058582D /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
+		CD699DC52470C2120058582D /* CashApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CashApp.xcdatamodel; sourceTree = "<group>"; };
+		CD699DEE2470C7F50058582D /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CD699DEF2470C7F60058582D /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FB829C76E14DFEB4604227D5 /* Pods_CashApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +120,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD699DC1247069C90058582D /* CodeScanner in Frameworks */,
+				7C57BE8A737386925F245C6B /* Pods_CashApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09E3FED80AB71695DDA24DFD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B03E421320F944F6ADD2493 /* Pods-CashApp.debug.xcconfig */,
+				5A826819AA2F3C2B15134E5D /* Pods-CashApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA6C94E2410B8FE4B0BBBC4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB829C76E14DFEB4604227D5 /* Pods_CashApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CD41A2882465F3D100085A88 = {
 			isa = PBXGroup;
 			children = (
 				CD41A2932465F3D100085A88 /* CashApp */,
 				CD41A2922465F3D100085A88 /* Products */,
+				09E3FED80AB71695DDA24DFD /* Pods */,
+				CA6C94E2410B8FE4B0BBBC4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +166,18 @@
 		CD41A2932465F3D100085A88 /* CashApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD699E022473378F0058582D /* CoreData */,
+				CD699DFB247336CA0058582D /* Misc */,
+				CD699DF82473363A0058582D /* Data */,
+				CD699DF7247335E60058582D /* Shared */,
+				CD699DF6247335AA0058582D /* Menu */,
+				CD699DF5247335150058582D /* SearchFunction */,
+				CD699DF4247334AE0058582D /* MainView */,
 				CD41A2942465F3D100085A88 /* AppDelegate.swift */,
 				CD41A2962465F3D100085A88 /* SceneDelegate.swift */,
-				CD41A2982465F3D100085A88 /* ContentView.swift */,
+				CD699DC42470C2120058582D /* CashApp.xcdatamodeld */,
+				CD41A2EF2469B13D00085A88 /* MotherView.swift */,
+				CD41A2A82465F3F400085A88 /* Resources */,
 				CD41A29A2465F3D700085A88 /* Assets.xcassets */,
 				CD41A29F2465F3D700085A88 /* LaunchScreen.storyboard */,
 				CD41A2A22465F3D700085A88 /* Info.plist */,
@@ -75,6 +194,103 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CD41A2A82465F3F400085A88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD41A2A92465F3F400085A88 /* charleyrivers.jpg */,
+				CD41A2AA2465F3F400085A88 /* turtlerock.jpg */,
+				CD41A2AB2465F3F400085A88 /* silversalmoncreek.jpg */,
+				CD41A2AC2465F3F400085A88 /* icybay.jpg */,
+				CD41A2AD2465F3F400085A88 /* lakemcdonald.jpg */,
+				CD41A2AE2465F3F400085A88 /* hiddenlake.jpg */,
+				CD41A2AF2465F3F400085A88 /* twinlake.jpg */,
+				CD41A2B02465F3F400085A88 /* transactionData.json */,
+				CD41A2E524676CF000085A88 /* friendData.json */,
+				CD41A2B12465F3F500085A88 /* umbagog.jpg */,
+				CD41A2B32465F3F500085A88 /* chincoteague.jpg */,
+				CD41A2B42465F3F500085A88 /* yukon_charleyrivers.jpg */,
+				CD41A2B52465F3F500085A88 /* stmarylake.jpg */,
+				CD41A2B62465F3F500085A88 /* chilkoottrail.jpg */,
+				CD41A2B72465F3F500085A88 /* rainbowlake.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD699DF4247334AE0058582D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				CD41A2D72465F43B00085A88 /* MainPage.swift */,
+				CD41A2C72465F40000085A88 /* TransactionDetail.swift */,
+				CD41A2E324675F5400085A88 /* SendPayment.swift */,
+				CD41A2F7246A2A8D00085A88 /* PaymentPage.swift */,
+				CD41A2CB2465F41900085A88 /* TransactionRow.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		CD699DF5247335150058582D /* SearchFunction */ = {
+			isa = PBXGroup;
+			children = (
+				CD41A2F9246A3FF400085A88 /* SearchPeople.swift */,
+				CD699DBD2470555F0058582D /* QrCode.swift */,
+			);
+			path = SearchFunction;
+			sourceTree = "<group>";
+		};
+		CD699DF6247335AA0058582D /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CD41A2D32465F43000085A88 /* MenuView.swift */,
+				CD699DAF246F645F0058582D /* AboutView.swift */,
+				CD15221F246B31550085A18E /* Settings.swift */,
+				CD152227246B4E070085A18E /* GetHelp.swift */,
+				CD152221246B368D0085A18E /* Incomplete.swift */,
+				CD152225246B4DEA0085A18E /* Purchases.swift */,
+				CD152223246B4D7D0085A18E /* Notifications.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CD699DF7247335E60058582D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CD41A2CF2465F42700085A88 /* ProfilePage.swift */,
+				CD41A2DF24661F3400085A88 /* Profile.swift */,
+				CD41A2DD24661CB300085A88 /* CircleImage.swift */,
+				CD41A2D52465F43700085A88 /* MapView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CD699DF82473363A0058582D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CD41A2DB2465F46C00085A88 /* Data.swift */,
+				CD41A2CD2465F42100085A88 /* UserData.swift */,
+				CD41A2E92467739B00085A88 /* Friend.swift */,
+				CD41A2E72467725900085A88 /* FriendRow.swift */,
+				CD41A2C92465F40D00085A88 /* Transaction.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CD699DFB247336CA0058582D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				CD41A2D12465F42C00085A88 /* RegistrationForm.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		CD699E022473378F0058582D /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CD699DEF2470C7F60058582D /* Post+CoreDataClass.swift */,
+				CD699DEE2470C7F50058582D /* Post+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,15 +298,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD41A2A52465F3D700085A88 /* Build configuration list for PBXNativeTarget "CashApp" */;
 			buildPhases = (
+				97F3E1D6B73DAB94368D1BDF /* [CP] Check Pods Manifest.lock */,
 				CD41A28D2465F3D100085A88 /* Sources */,
 				CD41A28E2465F3D100085A88 /* Frameworks */,
 				CD41A28F2465F3D100085A88 /* Resources */,
+				F627E4CCE1DC44A97F309503 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CashApp;
+			packageProductDependencies = (
+				CD699DC0247069C90058582D /* CodeScanner */,
+			);
 			productName = CashApp;
 			productReference = CD41A2912465F3D100085A88 /* CashApp.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +340,9 @@
 				Base,
 			);
 			mainGroup = CD41A2882465F3D100085A88;
+			packageReferences = (
+				CD699DBF247069C90058582D /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = CD41A2922465F3D100085A88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,13 +357,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD41A2C02465F3F500085A88 /* umbagog.jpg in Resources */,
 				CD41A2A12465F3D700085A88 /* LaunchScreen.storyboard in Resources */,
 				CD41A29E2465F3D700085A88 /* Preview Assets.xcassets in Resources */,
 				CD41A29B2465F3D700085A88 /* Assets.xcassets in Resources */,
+				CD41A2C32465F3F500085A88 /* yukon_charleyrivers.jpg in Resources */,
+				CD41A2BA2465F3F500085A88 /* silversalmoncreek.jpg in Resources */,
+				CD41A2C62465F3F500085A88 /* rainbowlake.jpg in Resources */,
+				CD41A2B82465F3F500085A88 /* charleyrivers.jpg in Resources */,
+				CD41A2BB2465F3F500085A88 /* icybay.jpg in Resources */,
+				CD41A2BE2465F3F500085A88 /* twinlake.jpg in Resources */,
+				CD41A2C42465F3F500085A88 /* stmarylake.jpg in Resources */,
+				CD41A2E624676CF000085A88 /* friendData.json in Resources */,
+				CD41A2C52465F3F500085A88 /* chilkoottrail.jpg in Resources */,
+				CD41A2BF2465F3F500085A88 /* transactionData.json in Resources */,
+				CD41A2C22465F3F500085A88 /* chincoteague.jpg in Resources */,
+				CD41A2BC2465F3F500085A88 /* lakemcdonald.jpg in Resources */,
+				CD41A2BD2465F3F500085A88 /* hiddenlake.jpg in Resources */,
+				CD41A2B92465F3F500085A88 /* turtlerock.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97F3E1D6B73DAB94368D1BDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CashApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F627E4CCE1DC44A97F309503 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CashApp/Pods-CashApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CashApp/Pods-CashApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CashApp/Pods-CashApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CD41A28D2465F3D100085A88 /* Sources */ = {
@@ -147,8 +428,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD41A2952465F3D100085A88 /* AppDelegate.swift in Sources */,
+				CD152220246B31550085A18E /* Settings.swift in Sources */,
 				CD41A2972465F3D100085A88 /* SceneDelegate.swift in Sources */,
-				CD41A2992465F3D100085A88 /* ContentView.swift in Sources */,
+				CD699DF12470C7F60058582D /* Post+CoreDataClass.swift in Sources */,
+				CD699DB0246F645F0058582D /* AboutView.swift in Sources */,
+				CD699DBE2470555F0058582D /* QrCode.swift in Sources */,
+				CD41A2D02465F42700085A88 /* ProfilePage.swift in Sources */,
+				CD41A2E024661F3400085A88 /* Profile.swift in Sources */,
+				CD41A2E424675F5400085A88 /* SendPayment.swift in Sources */,
+				CD152224246B4D7D0085A18E /* Notifications.swift in Sources */,
+				CD41A2DE24661CB300085A88 /* CircleImage.swift in Sources */,
+				CD41A2D62465F43700085A88 /* MapView.swift in Sources */,
+				CD41A2E82467725900085A88 /* FriendRow.swift in Sources */,
+				CD41A2CE2465F42100085A88 /* UserData.swift in Sources */,
+				CD41A2F02469B13D00085A88 /* MotherView.swift in Sources */,
+				CD41A2DC2465F46C00085A88 /* Data.swift in Sources */,
+				CD152222246B368D0085A18E /* Incomplete.swift in Sources */,
+				CD699DC62470C2120058582D /* CashApp.xcdatamodeld in Sources */,
+				CD41A2F8246A2A8E00085A88 /* PaymentPage.swift in Sources */,
+				CD41A2FA246A3FF400085A88 /* SearchPeople.swift in Sources */,
+				CD41A2D42465F43000085A88 /* MenuView.swift in Sources */,
+				CD41A2EA2467739B00085A88 /* Friend.swift in Sources */,
+				CD41A2CC2465F41900085A88 /* TransactionRow.swift in Sources */,
+				CD41A2C82465F40000085A88 /* TransactionDetail.swift in Sources */,
+				CD152226246B4DEA0085A18E /* Purchases.swift in Sources */,
+				CD699DF02470C7F60058582D /* Post+CoreDataProperties.swift in Sources */,
+				CD41A2CA2465F40D00085A88 /* Transaction.swift in Sources */,
+				CD152228246B4E070085A18E /* GetHelp.swift in Sources */,
+				CD41A2D22465F42C00085A88 /* RegistrationForm.swift in Sources */,
+				CD41A2D82465F43B00085A88 /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +590,12 @@
 		};
 		CD41A2A62465F3D700085A88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B03E421320F944F6ADD2493 /* Pods-CashApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CashApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 46FHHDL29Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CashApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,10 +611,12 @@
 		};
 		CD41A2A72465F3D700085A88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A826819AA2F3C2B15134E5D /* Pods-CashApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"CashApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 46FHHDL29Z;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = CashApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,6 +652,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD699DBF247069C90058582D /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD699DC0247069C90058582D /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD699DBF247069C90058582D /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CD699DC42470C2120058582D /* CashApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD699DC52470C2120058582D /* CashApp.xcdatamodel */,
+			);
+			currentVersion = CD699DC52470C2120058582D /* CashApp.xcdatamodel */;
+			path = CashApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CD41A2892465F3D100085A88 /* Project object */;
 }

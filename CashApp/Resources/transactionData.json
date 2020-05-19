@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "person1": "Chng Way Woo",
+        "category": "paid",
+        "person2": "Byunggun Kim",
+        "content": "Grocery",
+        "date": "2020-05-08T17:00:00.000Z",
+        "privacy": "PublicOnly",
+        "coordinates": {
+            "longitude": -116.166868,
+            "latitude": 34.011286
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 2,
+        "person1": "Wings Yi Rou",
+        "category": "charged",
+        "person2": "Ka Chun Soh",
+        "content": "Walmart groceries",
+        "date": "2020-05-08T17:00:00.000Z",
+        "privacy": "PublicOnly",
+        "coordinates": {
+            "longitude": -152.665167,
+            "latitude": 59.980167
+        },
+        "imageName": "silversalmoncreek"
+    },
+    {
+        "id": 3,
+        "person1": "Alicia Evans",
+        "category": "paid",
+        "person2": "you",
+        "content": "Chair",
+        "date": "2020-05-08T17:00:00.000Z",
+        "privacy": "PrivateOnly",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "chilkoottrail"
+    },
+    {
+        "id": 4,
+        "person1": "Bandhan Patel",
+        "category": "charged",
+        "person2": "Hilor Shah",
+        "content": "Apna Hisaab clear hi rehna hai",
+        "date": "2020-05-08T17:00:00.000Z",
+        "privacy": "PrivateOnly",
+        "coordinates": {
+            "longitude": -135.334571,
+            "latitude": 59.560551
+        },
+        "imageName": "charleyrivers"
+    }
+]
