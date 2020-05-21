@@ -59,6 +59,7 @@ struct TransactionDetail: View {
                 newComment.id = UUID()
                 newComment.comments = self.comment
                 newComment.username = self.transaction.person2
+                self.comment = ""
                 
                 do {
                     try self.managedObjectContext.save()

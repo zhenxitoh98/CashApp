@@ -10,6 +10,7 @@ import SwiftUI
 import Introspect
 
 struct MenuView: View {
+    @EnvironmentObject var session: SessionStore
     
     init() {
         // To remove only extra separators below the list:
@@ -118,6 +119,18 @@ struct MenuView: View {
                             Spacer()
                         }.padding(.top, 30)
                     }
+                    
+                    
+                    Button(action: session.signOut) {
+                        HStack {
+                            Image(systemName: "square.and.arrow.down")
+                                .foregroundColor(.blue)
+                                .frame(width: 20, height: 20)
+                            Text("Sign Out")
+                                .foregroundColor(.blue)
+                                .font(.headline)
+                        }.padding(.top, 30)
+                    }
                 }
             }
 //            .padding()
@@ -130,7 +143,7 @@ struct MenuView: View {
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuView()
+        MenuView().environmentObject(SessionStore())
     }
 }
 

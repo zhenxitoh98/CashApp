@@ -12,51 +12,53 @@ struct Settings: View {
 //    @State private var selectedSheet: Sheet.SheetType?
     
     var body: some View {
-            List {
-                Section(header: Text("PREFERENCES").padding(.top, 25)) {
+        List {
+            Section(header: Text("PREFERENCES").padding(.top, 25)) {
+                NavigationLink(destination: EditProfile()) {
                     Text("Edit Profile")
-                    Text("Payment Methods")
-                    Text("Privacy")
-                    Text("Notifications")
-                    Text("Friends & Social")
-                    Text("Change Phone Number")
                 }
-                    
-                Section(header: Text("BUYING").padding(.top, 10)) {
-                    Text("Connect Browsers")
-                    Text("Backup Payment")
-                    Text("Connected Merchants")
-                }
+                Text("Payment Methods")
+                Text("Privacy")
+                Text("Notifications")
+                Text("Friends & Social")
+                Text("Change Phone Number")
+            }
                 
-                Section(header: Text("SECURITY").padding(.top, 10)) {
-                    Text("Face ID & PIN")
-                    Text("Change Password")
-                    Text("Remembered Devices")
-                    Text("Identity Verification")
-                }
-                
-                Section(header: Text("INFORMATION").padding(.top, 10)) {
-                    Text("Legal")
-                    Text("Helpful Information")
-                }
-                
-                Section() {
+            Section(header: Text("BUYING").padding(.top, 10)) {
+                Text("Connect Browsers")
+                Text("Backup Payment")
+                Text("Connected Merchants")
+            }
+            
+            Section(header: Text("SECURITY").padding(.top, 10)) {
+                Text("Face ID & PIN")
+                Text("Change Password")
+                Text("Remembered Devices")
+                Text("Identity Verification")
+            }
+            
+            Section(header: Text("INFORMATION").padding(.top, 10)) {
+                Text("Legal")
+                Text("Helpful Information")
+            }
+            
+            Section() {
 
-                    Button(action: {
-                        if let url = URL(string: "https://www.google.com/") {
-                            UIApplication.shared.open(url)
-                        }
-                    }) {
-                        makeRow(text: "Send Feedback")
+                Button(action: {
+                    if let url = URL(string: "https://www.google.com/") {
+                        UIApplication.shared.open(url)
                     }
-
-                    Text("Rate CoinApp")
+                }) {
+                    makeRow(text: "Send Feedback")
                 }
-                
-                
-            }.listStyle(GroupedListStyle())
 
-                .navigationBarTitle("Settings", displayMode: .inline)
+                Text("Rate CoinApp")
+            }
+            
+            
+        }.listStyle(GroupedListStyle())
+
+        .navigationBarTitle("Settings", displayMode: .inline)
     }
     
     

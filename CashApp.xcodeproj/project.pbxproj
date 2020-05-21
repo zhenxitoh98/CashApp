@@ -57,6 +57,15 @@
 		CD699DC62470C2120058582D /* CashApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD699DC42470C2120058582D /* CashApp.xcdatamodeld */; };
 		CD699DF02470C7F60058582D /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DEE2470C7F50058582D /* Post+CoreDataProperties.swift */; };
 		CD699DF12470C7F60058582D /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DEF2470C7F60058582D /* Post+CoreDataClass.swift */; };
+		CD699E0624738B570058582D /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E0524738B570058582D /* login.swift */; };
+		CD699E0A24738B700058582D /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E0924738B700058582D /* AuthView.swift */; };
+		CD699E0F24746DCC0058582D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E0E24746DCC0058582D /* PageViewController.swift */; };
+		CD699E1224746E960058582D /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1124746E960058582D /* ColorExt.swift */; };
+		CD699E1424746E9C0058582D /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1324746E9B0058582D /* UIApplicationExt.swift */; };
+		CD699E1724746F880058582D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1624746F880058582D /* Page.swift */; };
+		CD699E1D2474C0C10058582D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1C2474C0C10058582D /* SessionStore.swift */; };
+		CDF7D1CD24760EC9008EA9A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDF7D1CC24760EC9008EA9A1 /* GoogleService-Info.plist */; };
+		CDF7D1CF24761111008EA9A1 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7D1CE24761111008EA9A1 /* EditProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +121,15 @@
 		CD699DC52470C2120058582D /* CashApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CashApp.xcdatamodel; sourceTree = "<group>"; };
 		CD699DEE2470C7F50058582D /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CD699DEF2470C7F60058582D /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CD699E0524738B570058582D /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
+		CD699E0924738B700058582D /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		CD699E0E24746DCC0058582D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		CD699E1124746E960058582D /* ColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		CD699E1324746E9B0058582D /* UIApplicationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
+		CD699E1624746F880058582D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		CD699E1C2474C0C10058582D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		CDF7D1CC24760EC9008EA9A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDF7D1CE24761111008EA9A1 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		FB829C76E14DFEB4604227D5 /* Pods_CashApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -166,6 +184,9 @@
 		CD41A2932465F3D100085A88 /* CashApp */ = {
 			isa = PBXGroup;
 			children = (
+				CD699E1524746F6F0058582D /* Models */,
+				CD699E1024746E8D0058582D /* Extensions */,
+				CD699E0D24746DAB0058582D /* ViewControllers */,
 				CD699E022473378F0058582D /* CoreData */,
 				CD699DFB247336CA0058582D /* Misc */,
 				CD699DF82473363A0058582D /* Data */,
@@ -175,6 +196,7 @@
 				CD699DF4247334AE0058582D /* MainView */,
 				CD41A2942465F3D100085A88 /* AppDelegate.swift */,
 				CD41A2962465F3D100085A88 /* SceneDelegate.swift */,
+				CD699E1C2474C0C10058582D /* SessionStore.swift */,
 				CD699DC42470C2120058582D /* CashApp.xcdatamodeld */,
 				CD41A2EF2469B13D00085A88 /* MotherView.swift */,
 				CD41A2A82465F3F400085A88 /* Resources */,
@@ -182,6 +204,9 @@
 				CD41A29F2465F3D700085A88 /* LaunchScreen.storyboard */,
 				CD41A2A22465F3D700085A88 /* Info.plist */,
 				CD41A29C2465F3D700085A88 /* Preview Content */,
+				CD699E0524738B570058582D /* login.swift */,
+				CD699E0924738B700058582D /* AuthView.swift */,
+				CDF7D1CC24760EC9008EA9A1 /* GoogleService-Info.plist */,
 			);
 			path = CashApp;
 			sourceTree = "<group>";
@@ -255,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				CD41A2CF2465F42700085A88 /* ProfilePage.swift */,
+				CDF7D1CE24761111008EA9A1 /* EditProfile.swift */,
 				CD41A2DF24661F3400085A88 /* Profile.swift */,
 				CD41A2DD24661CB300085A88 /* CircleImage.swift */,
 				CD41A2D52465F43700085A88 /* MapView.swift */,
@@ -289,6 +315,31 @@
 				CD699DEE2470C7F50058582D /* Post+CoreDataProperties.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CD699E0D24746DAB0058582D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD699E0E24746DCC0058582D /* PageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CD699E1024746E8D0058582D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD699E1124746E960058582D /* ColorExt.swift */,
+				CD699E1324746E9B0058582D /* UIApplicationExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD699E1524746F6F0058582D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD699E1624746F880058582D /* Page.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +424,7 @@
 				CD41A2BF2465F3F500085A88 /* transactionData.json in Resources */,
 				CD41A2C22465F3F500085A88 /* chincoteague.jpg in Resources */,
 				CD41A2BC2465F3F500085A88 /* lakemcdonald.jpg in Resources */,
+				CDF7D1CD24760EC9008EA9A1 /* GoogleService-Info.plist in Resources */,
 				CD41A2BD2465F3F500085A88 /* hiddenlake.jpg in Resources */,
 				CD41A2B92465F3F500085A88 /* turtlerock.jpg in Resources */,
 			);
@@ -433,9 +485,12 @@
 				CD699DF12470C7F60058582D /* Post+CoreDataClass.swift in Sources */,
 				CD699DB0246F645F0058582D /* AboutView.swift in Sources */,
 				CD699DBE2470555F0058582D /* QrCode.swift in Sources */,
+				CD699E1224746E960058582D /* ColorExt.swift in Sources */,
 				CD41A2D02465F42700085A88 /* ProfilePage.swift in Sources */,
+				CD699E0624738B570058582D /* login.swift in Sources */,
 				CD41A2E024661F3400085A88 /* Profile.swift in Sources */,
 				CD41A2E424675F5400085A88 /* SendPayment.swift in Sources */,
+				CDF7D1CF24761111008EA9A1 /* EditProfile.swift in Sources */,
 				CD152224246B4D7D0085A18E /* Notifications.swift in Sources */,
 				CD41A2DE24661CB300085A88 /* CircleImage.swift in Sources */,
 				CD41A2D62465F43700085A88 /* MapView.swift in Sources */,
@@ -448,15 +503,20 @@
 				CD41A2F8246A2A8E00085A88 /* PaymentPage.swift in Sources */,
 				CD41A2FA246A3FF400085A88 /* SearchPeople.swift in Sources */,
 				CD41A2D42465F43000085A88 /* MenuView.swift in Sources */,
+				CD699E1424746E9C0058582D /* UIApplicationExt.swift in Sources */,
+				CD699E1D2474C0C10058582D /* SessionStore.swift in Sources */,
 				CD41A2EA2467739B00085A88 /* Friend.swift in Sources */,
 				CD41A2CC2465F41900085A88 /* TransactionRow.swift in Sources */,
+				CD699E0F24746DCC0058582D /* PageViewController.swift in Sources */,
 				CD41A2C82465F40000085A88 /* TransactionDetail.swift in Sources */,
 				CD152226246B4DEA0085A18E /* Purchases.swift in Sources */,
+				CD699E0A24738B700058582D /* AuthView.swift in Sources */,
 				CD699DF02470C7F60058582D /* Post+CoreDataProperties.swift in Sources */,
 				CD41A2CA2465F40D00085A88 /* Transaction.swift in Sources */,
 				CD152228246B4E070085A18E /* GetHelp.swift in Sources */,
 				CD41A2D22465F42C00085A88 /* RegistrationForm.swift in Sources */,
 				CD41A2D82465F43B00085A88 /* MainPage.swift in Sources */,
+				CD699E1724746F880058582D /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

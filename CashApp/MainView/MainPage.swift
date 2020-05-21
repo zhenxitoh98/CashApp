@@ -7,6 +7,7 @@ import SwiftUI
 struct ContentView: View {
     
     @EnvironmentObject var userData: UserData
+//    @EnvironmentObject var session: SessionStore
     @State var showSheetView = false
     @State private var selectedTab = 1
     
