@@ -50,9 +50,12 @@ struct SignInView: View {
             
             Button(action: signIn) {
                 Text("Sign in")
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .frame(height: 50)
-                    .font(.system(size: 14, weight: .bold))
+                    .fontWeight(.bold)
+                    .font(.system(size: 20))
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 20).fill(Color.blue).frame(width: 150, height: 50))
+                    .foregroundColor(.white)
+                    .padding(10)
             }
             
             if (error != "") {
@@ -120,8 +123,12 @@ struct SignUpView: View {
         
             Button(action: signUp) {
                 Text("Create Account")
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .frame(height: 50)
+                    .fontWeight(.bold)
+                    .font(.system(size: 20))
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 20).fill(Color.blue).frame(width: 200, height: 50))
+                    .foregroundColor(.white)
+                    .padding(10)
             }
             
             if (error != "") {
