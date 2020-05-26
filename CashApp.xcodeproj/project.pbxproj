@@ -64,6 +64,11 @@
 		CD699E1424746E9C0058582D /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1324746E9B0058582D /* UIApplicationExt.swift */; };
 		CD699E1724746F880058582D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1624746F880058582D /* Page.swift */; };
 		CD699E1D2474C0C10058582D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1C2474C0C10058582D /* SessionStore.swift */; };
+		CDCE5BD4247A216800319AD3 /* FriendLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5BD3247A216800319AD3 /* FriendLandingPage.swift */; };
+		CDCE5BD8247B1BAB00319AD3 /* PersonalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5BD7247B1BAB00319AD3 /* PersonalDetail.swift */; };
+		CDCE5BDA247B242D00319AD3 /* FriendRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */; };
+		CDEB3A35247C7DA300DCAD54 /* CustomTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3A34247C7DA300DCAD54 /* CustomTextButton.swift */; };
+		CDEB3A37247CAFB900DCAD54 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3A36247CAFB900DCAD54 /* ContactList.swift */; };
 		CDF7D1CD24760EC9008EA9A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDF7D1CC24760EC9008EA9A1 /* GoogleService-Info.plist */; };
 		CDF7D1CF24761111008EA9A1 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7D1CE24761111008EA9A1 /* EditProfile.swift */; };
 /* End PBXBuildFile section */
@@ -128,6 +133,11 @@
 		CD699E1324746E9B0058582D /* UIApplicationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
 		CD699E1624746F880058582D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		CD699E1C2474C0C10058582D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		CDCE5BD3247A216800319AD3 /* FriendLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendLandingPage.swift; sourceTree = "<group>"; };
+		CDCE5BD7247B1BAB00319AD3 /* PersonalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetail.swift; sourceTree = "<group>"; };
+		CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestList.swift; sourceTree = "<group>"; };
+		CDEB3A34247C7DA300DCAD54 /* CustomTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextButton.swift; sourceTree = "<group>"; };
+		CDEB3A36247CAFB900DCAD54 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
 		CDF7D1CC24760EC9008EA9A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDF7D1CE24761111008EA9A1 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		FB829C76E14DFEB4604227D5 /* Pods_CashApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				CD41A2F9246A3FF400085A88 /* SearchPeople.swift */,
+				CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */,
 				CD699DBD2470555F0058582D /* QrCode.swift */,
 			);
 			path = SearchFunction;
@@ -268,6 +279,7 @@
 				CD41A2D32465F43000085A88 /* MenuView.swift */,
 				CD699DAF246F645F0058582D /* AboutView.swift */,
 				CD15221F246B31550085A18E /* Settings.swift */,
+				CDEB3A36247CAFB900DCAD54 /* ContactList.swift */,
 				CD152227246B4E070085A18E /* GetHelp.swift */,
 				CD152221246B368D0085A18E /* Incomplete.swift */,
 				CD152225246B4DEA0085A18E /* Purchases.swift */,
@@ -281,6 +293,7 @@
 			children = (
 				CD41A2CF2465F42700085A88 /* ProfilePage.swift */,
 				CDF7D1CE24761111008EA9A1 /* EditProfile.swift */,
+				CDCE5BD7247B1BAB00319AD3 /* PersonalDetail.swift */,
 				CD41A2DF24661F3400085A88 /* Profile.swift */,
 				CD41A2DD24661CB300085A88 /* CircleImage.swift */,
 				CD41A2D52465F43700085A88 /* MapView.swift */,
@@ -295,6 +308,8 @@
 				CD41A2CD2465F42100085A88 /* UserData.swift */,
 				CD41A2E92467739B00085A88 /* Friend.swift */,
 				CD41A2E72467725900085A88 /* FriendRow.swift */,
+				CDCE5BD3247A216800319AD3 /* FriendLandingPage.swift */,
+				CDEB3A34247C7DA300DCAD54 /* CustomTextButton.swift */,
 				CD41A2C92465F40D00085A88 /* Transaction.swift */,
 			);
 			path = Data;
@@ -489,9 +504,12 @@
 				CD41A2D02465F42700085A88 /* ProfilePage.swift in Sources */,
 				CD699E0624738B570058582D /* login.swift in Sources */,
 				CD41A2E024661F3400085A88 /* Profile.swift in Sources */,
+				CDCE5BD8247B1BAB00319AD3 /* PersonalDetail.swift in Sources */,
+				CDEB3A37247CAFB900DCAD54 /* ContactList.swift in Sources */,
 				CD41A2E424675F5400085A88 /* SendPayment.swift in Sources */,
 				CDF7D1CF24761111008EA9A1 /* EditProfile.swift in Sources */,
 				CD152224246B4D7D0085A18E /* Notifications.swift in Sources */,
+				CDEB3A35247C7DA300DCAD54 /* CustomTextButton.swift in Sources */,
 				CD41A2DE24661CB300085A88 /* CircleImage.swift in Sources */,
 				CD41A2D62465F43700085A88 /* MapView.swift in Sources */,
 				CD41A2E82467725900085A88 /* FriendRow.swift in Sources */,
@@ -510,8 +528,10 @@
 				CD699E0F24746DCC0058582D /* PageViewController.swift in Sources */,
 				CD41A2C82465F40000085A88 /* TransactionDetail.swift in Sources */,
 				CD152226246B4DEA0085A18E /* Purchases.swift in Sources */,
+				CDCE5BD4247A216800319AD3 /* FriendLandingPage.swift in Sources */,
 				CD699E0A24738B700058582D /* AuthView.swift in Sources */,
 				CD699DF02470C7F60058582D /* Post+CoreDataProperties.swift in Sources */,
+				CDCE5BDA247B242D00319AD3 /* FriendRequestList.swift in Sources */,
 				CD41A2CA2465F40D00085A88 /* Transaction.swift in Sources */,
 				CD152228246B4E070085A18E /* GetHelp.swift in Sources */,
 				CD41A2D22465F42C00085A88 /* RegistrationForm.swift in Sources */,

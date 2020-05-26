@@ -8,6 +8,21 @@
 
 import SwiftUI
 
+struct customText: View {
+    var img: String
+    var text: String
+
+    
+    var body: some View {
+        HStack {
+            Image(systemName: img).frame(width: 10, height: 10).foregroundColor(.gray)
+            
+            Text(text)
+                .padding(.leading, 20)
+        }
+    }
+}
+
 struct Settings: View {
 //    @State private var selectedSheet: Sheet.SheetType?
     
@@ -15,31 +30,61 @@ struct Settings: View {
         List {
             Section(header: Text("PREFERENCES").padding(.top, 25)) {
                 NavigationLink(destination: EditProfile()) {
-                    Text("Edit Profile")
+                    customText(img: "person.fill", text: "Edit Profile")
                 }
-                Text("Payment Methods")
-                Text("Privacy")
-                Text("Notifications")
-                Text("Friends & Social")
-                Text("Change Phone Number")
+                
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "dollarsign.square.fill", text: "Payment Methods")
+                }
+                
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "lock.fill", text: "Privacy")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "bell.fill", text: "Notifications")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "person.2.fill", text: "Friends & Social")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "phone.circle.fill", text: "Change Phone Number")
+                }
             }
                 
             Section(header: Text("BUYING").padding(.top, 10)) {
-                Text("Connect Browsers")
-                Text("Backup Payment")
-                Text("Connected Merchants")
+                NavigationLink(destination: ContactsView()) {
+                    customText(img: "globe", text: "Connect Browsers")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "creditcard.fill", text: "Backup Payment")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "doc.on.clipboard.fill", text: "Connected Merchants")
+                }
             }
             
             Section(header: Text("SECURITY").padding(.top, 10)) {
-                Text("Face ID & PIN")
-                Text("Change Password")
-                Text("Remembered Devices")
-                Text("Identity Verification")
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "faceid", text: "Face ID & Pin")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "lock.fill", text: "Change Password")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "desktopcomputer", text: "Remembered Devices")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "creditcard", text: "Identity Verification")
+                }
             }
             
             Section(header: Text("INFORMATION").padding(.top, 10)) {
-                Text("Legal")
-                Text("Helpful Information")
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "doc.on.clipboard.fill", text: "Legal")
+                }
+                NavigationLink(destination: EmptyView()) {
+                    customText(img: "doc.on.clipboard.fill", text: "Helpful Information")
+                }
             }
             
             Section() {
@@ -49,10 +94,16 @@ struct Settings: View {
                         UIApplication.shared.open(url)
                     }
                 }) {
-                    makeRow(text: "Send Feedback")
+                    makeRow(img: "paperplane", text: "Send Feedback")
                 }
 
-                Text("Rate CoinApp")
+                Button(action: {
+                    if let url = URL(string: "https://www.google.com/") {
+                        UIApplication.shared.open(url)
+                    }
+                }) {
+                    makeRow(img: "star.fill", text: "Rate CoinApp")
+                }
             }
             
             
@@ -62,10 +113,12 @@ struct Settings: View {
     }
     
     
-    private func makeRow(text: String) -> some View {
+    private func makeRow(img: String, text: String) -> some View {
         HStack {
-            Text(LocalizedStringKey(text))
-                .font(.body)
+            Image(systemName: img).frame(width: 10, height: 10)
+            
+            Text(text)
+                .padding(.leading, 20)
             Spacer()
             Image(systemName: "chevron.right").imageScale(.medium)
         }

@@ -8,7 +8,8 @@
 
 import SwiftUI
 import Introspect
-
+import FirebaseFirestore
+import FirebaseAuth
 
 
 
@@ -19,22 +20,19 @@ struct SendPayment: View {
     @State private var paymentAmount = ""
     @State private var paymentContent = ""
     @State private var isActive = true
-//    @Binding var showSheetView: Bool
     @State private var selectedTab = 0
+    @State private var showingPaymentAlert = false
+    
     var transactTypes = ["Pay", "Request"]
     
+//    @ObservedObject var trans = getTransactionData()
+    @ObservedObject var friendRequest = getFriendRequestData()
+        
     var body: some View {
        
         NavigationView {
 
             List {
-    //                    ForEach(userData.transactions) { transactions in
-                // Crash happens here when foreach is used
-    //                NavigationLink(destination: TransactionDetail(transaction: transactionData[0])) {
-    //                    TransactionRow(transaction: transactionData[0])
-    //                }
-//                picker
-                
                 HStack {
                     Text("\(transactTypes[selectedTab]) $").bold()
                     TextField("0", text: $paymentAmount).keyboardType(.decimalPad)
@@ -49,77 +47,55 @@ struct SendPayment: View {
                     Text("For").bold()
                     TextField("Add a note", text: $paymentContent)
                 }
-
-//                QrCode()
-
-
-                Section(header: Text("Top People")) {
-                    Button(action : {
-                        self.recipient = friendData[0].name
-                    }) {
-                        FriendRow(friend: friendData[0])
-                    }
-                    
-                    Button(action : {
-                        self.recipient = friendData[1].name
-                    }) {
-                        FriendRow(friend: friendData[1])
-                    }
-                    
-                    Button(action : {
-                        self.recipient = friendData[2].name
-                    }) {
-                        FriendRow(friend: friendData[2])
-                    }
-                    
-                    Button(action : {
-                        self.recipient = friendData[3].name
-                    }) {
-                        FriendRow(friend: friendData[3])
-                    }
-                }
                 
-                Section(header: Text("Friends")) {
-                    Button(action : {
-                        self.recipient = friendData[0].name
-                    }) {
-                        FriendRow(friend: friendData[0])
-                    }
-                    
-                    Button(action : {
-                        self.recipient = friendData[1].name
-                    }) {
-                        FriendRow(friend: friendData[1])
-                    }
-                    
-                    Button(action : {
-                        self.recipient = friendData[2].name
-                    }) {
-                        FriendRow(friend: friendData[2])
-                    }
-                    
-                    Button(action : {
-                        self.recipient = friendData[3].name
-                    }) {
-                        FriendRow(friend: friendData[3])
+                ForEach(friendRequest.datas) { i in
+                    if i.status == "" {
+                        Section(header: Text("Top People")) {
+                            Button(action : {
+                                self.recipient = i.firstname + " " + i.lastname
+                            }) {
+                                FriendRow(friend: friendData[0], friendFirstName: i.firstname, friendLastName: i.lastname, friendUsername: i.username, status: i.status)
+                            }
+                        }
+                    } else if i.status == "accepted" {
+                        Section(header: Text("Friends")) {
+                            Button(action : {
+                                self.recipient = i.firstname + " " + i.lastname
+                            }) {
+                                FriendRow(friend: friendData[0], friendFirstName: i.firstname, friendLastName: i.lastname, friendUsername: i.username, status: i.status)
+                            }
+                        }
                     }
                 }
             }
+//            .alert(isPresented: $showingPaymentAlert) {
+//                Alert(title: Text("Transaction confirmed"), message: Text("You sent $\(trans.amount) to \(trans.recipient)"), dismissButton: .default(Text("Done")))
+
+//            }
             .navigationBarTitle("Pay or Request")
             .navigationBarItems(
-                leading:
-//                HStack {
-//                    Button (action: {
-////                        self.showSheetView = false
-//                        UIApplication.shared.endEditing()
-//                    }) {
-//                        Text("Cancel").bold()
-//                    }
-                picker
-                ,
+                leading: picker,
                 trailing:
                 Button (action: {
-                    
+//                    let db = Firestore.firestore()
+//                    guard let userID = Auth.auth().currentUser?.uid else { return }
+//
+//                    db.collection("transaction")
+//                    .document(userID)
+//                    .collection("transaction1")
+//                    .document()
+//                        .setData(["amount": self.paymentAmount, "content": self.paymentContent, "recipient": self.recipient, "transaction_type": self.transactTypes[self.selectedTab]]) { (err) in
+//                            if err != nil {
+//                                print((err?.localizedDescription)!)
+//                                return
+//                            }
+//                    }
+//                    self.showingPaymentAlert.toggle()
+//                    self.paymentAmount = ""
+//                    self.recipient = ""
+//                    self.paymentContent = ""
+
+                    UIApplication.shared.endEditing(true)
                 }) {
                     Text("Send").bold()
                 }
@@ -181,3 +157,6 @@ struct CustomTextField: UIViewRepresentable {
         }
     }
 }
+
+
+

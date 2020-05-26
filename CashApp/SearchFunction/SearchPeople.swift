@@ -13,29 +13,36 @@ struct SearchPeople: View {
     let array = ["Peter", "Paul", "Mary", "Anna-Lena", "George", "John", "Greg", "Thomas", "Robert", "Bernie", "Mike", "Benno", "Hugo", "Miles", "Michael", "Mikel", "Tim", "Tom", "Lottie", "Lorrie", "Barbara"]
     @State private var searchText = ""
     @State private var showCancelButton: Bool = false
+    
+    @ObservedObject var friendRequest = getFriendRequestData()
 
     var body: some View {
 
         NavigationView {
             VStack (alignment: .leading) {
-
                 searchField
-                
+        
                 List {
                     QrCode()
 
-                    Section(header: Text("Top People")) {
-                        FriendRow(friend: friendData[0])
-                        FriendRow(friend: friendData[1])
-                        FriendRow(friend: friendData[2])
-                        FriendRow(friend: friendData[3])
-                    }
-                    
-                    Section(header: Text("Friends")) {
-                        FriendRow(friend: friendData[0])
-                        FriendRow(friend: friendData[1])
-                        FriendRow(friend: friendData[2])
-                        FriendRow(friend: friendData[3])
+                    ForEach(friendRequest.datas) { i in
+                        if i.status == "" {
+                            Section(header: Text("Top People")) {
+                                Button(action : {
+                                    
+                                }) {
+                                    FriendRow(friend: friendData[0], friendFirstName: i.firstname, friendLastName: i.lastname, friendUsername: i.username, status: i.status)
+                                }
+                            }
+                        } else if i.status == "accepted" {
+                            Section(header: Text("Friends")) {
+                                Button(action : {
+                                    
+                                }) {
+                                    FriendRow(friend: friendData[0], friendFirstName: i.firstname, friendLastName: i.lastname, friendUsername: i.username, status: i.status)
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -9,9 +9,15 @@
 import SwiftUI
 
 struct FriendRow: View {
-    var friend: Friend
     @State var showSheetView = false
     @State private var showLinkTarget = false
+    
+    var friend: Friend
+    var friendFirstName: String
+    var friendLastName: String
+    var friendUsername: String
+    var status: String
+
     
     var body: some View {
         HStack {
@@ -23,8 +29,8 @@ struct FriendRow: View {
 
             
             VStack (alignment: .leading, spacing: 1) {
-                Text(friend.name)
-                Text(friend.username)
+                Text(friendFirstName + " " + friendLastName)
+                Text(friendUsername)
                     .font(.system(size: 10))
                     .foregroundColor(Color(red: 89 / 255, green: 89 / 255, blue: 89 / 255))
             }
@@ -37,7 +43,7 @@ struct FriendRow: View {
                 Image (systemName: "info.circle")
                     .imageScale(.large)
             }.sheet(isPresented: $showLinkTarget) {
-                Text("Profile Page")
+                FriendLandingPage(topFirstName: self.friendFirstName, topLastName: self.friendLastName, topUsername: self.friendUsername, status: self.status, friend: friendData[0])
             }
         }
     }
@@ -46,7 +52,7 @@ struct FriendRow: View {
 struct FriendRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            FriendRow(friend: friendData[0])
+            FriendRow(friend: friendData[0], friendFirstName: "", friendLastName: "", friendUsername: "", status: "")
                 .previewLayout(.fixed(width: 300, height: 70))
         }.previewLayout(.fixed(width: 300, height: 70))
 

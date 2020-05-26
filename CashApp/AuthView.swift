@@ -22,7 +22,6 @@ struct SignInView: View {
                 self.email = ""
                 self.password = ""
             }
-            
         }
     }
     
