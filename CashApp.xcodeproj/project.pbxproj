@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7C57BE8A737386925F245C6B /* Pods_CashApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB829C76E14DFEB4604227D5 /* Pods_CashApp.framework */; };
+		CD0CA3022489548D004A64EE /* KeyboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CA3012489548D004A64EE /* KeyboardItem.swift */; };
+		CD0CA304248A9F9B004A64EE /* SendPayment_V2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CA303248A9F9A004A64EE /* SendPayment_V2.swift */; };
 		CD152220246B31550085A18E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15221F246B31550085A18E /* Settings.swift */; };
 		CD152222246B368D0085A18E /* Incomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD152221246B368D0085A18E /* Incomplete.swift */; };
 		CD152224246B4D7D0085A18E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD152223246B4D7D0085A18E /* Notifications.swift */; };
@@ -51,6 +53,7 @@
 		CD41A2F02469B13D00085A88 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2EF2469B13D00085A88 /* MotherView.swift */; };
 		CD41A2F8246A2A8E00085A88 /* PaymentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2F7246A2A8D00085A88 /* PaymentPage.swift */; };
 		CD41A2FA246A3FF400085A88 /* SearchPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2F9246A3FF400085A88 /* SearchPeople.swift */; };
+		CD54E77D24874C6500B944F0 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E77C24874C6500B944F0 /* QRCodeGenerator.swift */; };
 		CD699DB0246F645F0058582D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DAF246F645F0058582D /* AboutView.swift */; };
 		CD699DBE2470555F0058582D /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DBD2470555F0058582D /* QrCode.swift */; };
 		CD699DC1247069C90058582D /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = CD699DC0247069C90058582D /* CodeScanner */; };
@@ -69,6 +72,7 @@
 		CDCE5BDA247B242D00319AD3 /* FriendRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */; };
 		CDEB3A35247C7DA300DCAD54 /* CustomTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3A34247C7DA300DCAD54 /* CustomTextButton.swift */; };
 		CDEB3A37247CAFB900DCAD54 /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3A36247CAFB900DCAD54 /* ContactList.swift */; };
+		CDEB3A39247E0DD800DCAD54 /* AllUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB3A38247E0DD800DCAD54 /* AllUsers.swift */; };
 		CDF7D1CD24760EC9008EA9A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDF7D1CC24760EC9008EA9A1 /* GoogleService-Info.plist */; };
 		CDF7D1CF24761111008EA9A1 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7D1CE24761111008EA9A1 /* EditProfile.swift */; };
 /* End PBXBuildFile section */
@@ -76,6 +80,8 @@
 /* Begin PBXFileReference section */
 		5A826819AA2F3C2B15134E5D /* Pods-CashApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashApp.release.xcconfig"; path = "Target Support Files/Pods-CashApp/Pods-CashApp.release.xcconfig"; sourceTree = "<group>"; };
 		9B03E421320F944F6ADD2493 /* Pods-CashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashApp.debug.xcconfig"; path = "Target Support Files/Pods-CashApp/Pods-CashApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CD0CA3012489548D004A64EE /* KeyboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardItem.swift; sourceTree = "<group>"; };
+		CD0CA303248A9F9A004A64EE /* SendPayment_V2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPayment_V2.swift; sourceTree = "<group>"; };
 		CD15221F246B31550085A18E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		CD152221246B368D0085A18E /* Incomplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incomplete.swift; sourceTree = "<group>"; };
 		CD152223246B4D7D0085A18E /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 		CD41A2EF2469B13D00085A88 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		CD41A2F7246A2A8D00085A88 /* PaymentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPage.swift; sourceTree = "<group>"; };
 		CD41A2F9246A3FF400085A88 /* SearchPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPeople.swift; sourceTree = "<group>"; };
+		CD54E77C24874C6500B944F0 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
 		CD699DAF246F645F0058582D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		CD699DBD2470555F0058582D /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
 		CD699DC52470C2120058582D /* CashApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CashApp.xcdatamodel; sourceTree = "<group>"; };
@@ -138,6 +145,7 @@
 		CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestList.swift; sourceTree = "<group>"; };
 		CDEB3A34247C7DA300DCAD54 /* CustomTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextButton.swift; sourceTree = "<group>"; };
 		CDEB3A36247CAFB900DCAD54 /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		CDEB3A38247E0DD800DCAD54 /* AllUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllUsers.swift; sourceTree = "<group>"; };
 		CDF7D1CC24760EC9008EA9A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDF7D1CE24761111008EA9A1 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 		FB829C76E14DFEB4604227D5 /* Pods_CashApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CashApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -257,7 +265,9 @@
 				CD41A2D72465F43B00085A88 /* MainPage.swift */,
 				CD41A2C72465F40000085A88 /* TransactionDetail.swift */,
 				CD41A2E324675F5400085A88 /* SendPayment.swift */,
+				CD0CA303248A9F9A004A64EE /* SendPayment_V2.swift */,
 				CD41A2F7246A2A8D00085A88 /* PaymentPage.swift */,
+				CD0CA3012489548D004A64EE /* KeyboardItem.swift */,
 				CD41A2CB2465F41900085A88 /* TransactionRow.swift */,
 			);
 			path = MainView;
@@ -267,8 +277,10 @@
 			isa = PBXGroup;
 			children = (
 				CD41A2F9246A3FF400085A88 /* SearchPeople.swift */,
+				CDEB3A38247E0DD800DCAD54 /* AllUsers.swift */,
 				CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */,
 				CD699DBD2470555F0058582D /* QrCode.swift */,
+				CD54E77C24874C6500B944F0 /* QRCodeGenerator.swift */,
 			);
 			path = SearchFunction;
 			sourceTree = "<group>";
@@ -510,6 +522,7 @@
 				CDF7D1CF24761111008EA9A1 /* EditProfile.swift in Sources */,
 				CD152224246B4D7D0085A18E /* Notifications.swift in Sources */,
 				CDEB3A35247C7DA300DCAD54 /* CustomTextButton.swift in Sources */,
+				CDEB3A39247E0DD800DCAD54 /* AllUsers.swift in Sources */,
 				CD41A2DE24661CB300085A88 /* CircleImage.swift in Sources */,
 				CD41A2D62465F43700085A88 /* MapView.swift in Sources */,
 				CD41A2E82467725900085A88 /* FriendRow.swift in Sources */,
@@ -518,8 +531,10 @@
 				CD41A2DC2465F46C00085A88 /* Data.swift in Sources */,
 				CD152222246B368D0085A18E /* Incomplete.swift in Sources */,
 				CD699DC62470C2120058582D /* CashApp.xcdatamodeld in Sources */,
+				CD54E77D24874C6500B944F0 /* QRCodeGenerator.swift in Sources */,
 				CD41A2F8246A2A8E00085A88 /* PaymentPage.swift in Sources */,
 				CD41A2FA246A3FF400085A88 /* SearchPeople.swift in Sources */,
+				CD0CA3022489548D004A64EE /* KeyboardItem.swift in Sources */,
 				CD41A2D42465F43000085A88 /* MenuView.swift in Sources */,
 				CD699E1424746E9C0058582D /* UIApplicationExt.swift in Sources */,
 				CD699E1D2474C0C10058582D /* SessionStore.swift in Sources */,
@@ -535,6 +550,7 @@
 				CD41A2CA2465F40D00085A88 /* Transaction.swift in Sources */,
 				CD152228246B4E070085A18E /* GetHelp.swift in Sources */,
 				CD41A2D22465F42C00085A88 /* RegistrationForm.swift in Sources */,
+				CD0CA304248A9F9B004A64EE /* SendPayment_V2.swift in Sources */,
 				CD41A2D82465F43B00085A88 /* MainPage.swift in Sources */,
 				CD699E1724746F880058582D /* Page.swift in Sources */,
 			);

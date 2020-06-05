@@ -25,7 +25,7 @@ struct FriendLandingPage: View {
     
 
     private var friendRequestButton: some View {
-        HStack (spacing: 40) {
+        HStack {
             if status == "accepted" {
                 Button(action: {
                     
@@ -37,6 +37,12 @@ struct FriendLandingPage: View {
                     
                 }) {
                     CustomTextButton(text: "Pending")
+                }
+            } else if status == "requested" {
+                Button(action: {
+                    
+                }) {
+                    CustomTextButton(text: "Requested")
                 }
             } else {
                 Button(action: {
@@ -103,16 +109,19 @@ struct FriendLandingPage: View {
                 
                 Divider()
                 
-                friendRequestButton.padding()
+                friendRequestButton
                 
-                Text("Pay or Request")
-                    .fontWeight(.bold)
-                    .font(.system(size: 20))
-                    .padding()
-                    .background(RoundedRectangle(cornerRadius: 20).fill(Color.blue).frame(width: 200, height: 50))
-                    .foregroundColor(.white)
-                    .padding(10)
-                
+                Button(action: {
+                    
+                }) {
+                    Text("Pay or Request")
+                        .fontWeight(.bold)
+                        .font(.system(size: 20))
+                        .padding()
+                        .background(RoundedRectangle(cornerRadius: 20).fill(Color.blue).frame(width: 200, height: 50))
+                        .foregroundColor(.white)
+                }
+
                 Divider()
                 
                 picker

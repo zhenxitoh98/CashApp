@@ -15,17 +15,14 @@ import FirebaseAuth
 
 
 
-struct SendPayment: View {
+struct SendPayment_V2: View {
     @State private var recipient = ""
-    @State private var paymentAmount = ""
     @State private var paymentContent = ""
-    @State private var isActive = true
-    @State private var selectedTab = 0
     @State private var showingPaymentAlert = false
     
-    var transactTypes = ["Pay", "Request"]
+    @State var paymentType: String
+    @State var paymentAmount: String
     
-//    @ObservedObject var trans = getTransactionData()
     @ObservedObject var friendRequest = getFriendRequestData()
     @ObservedObject var allUsers = getAllUsersData()
         
@@ -35,11 +32,6 @@ struct SendPayment: View {
 
             List {
                 HStack {
-                    Text("\(transactTypes[selectedTab]) $").bold()
-                    TextField("0", text: $paymentAmount).keyboardType(.decimalPad)
-                }
-
-                HStack {
                     Text("To").bold()
                     TextField("Name, @username, phone, or email", text: $recipient)
                 }
@@ -48,8 +40,6 @@ struct SendPayment: View {
                     Text("For").bold()
                     TextField("Add a note", text: $paymentContent)
                 }
-                
-                
                 
                 Section(header: Text("Top People")) {
                     ForEach(friendRequest.datas.filter{($0.lastname.contains(recipient) || $0.firstname.contains(recipient) || $0.username.contains(recipient) || recipient == "") && ($0.status == "requested")}, id:\.self.id) { i in
@@ -85,9 +75,8 @@ struct SendPayment: View {
 //                Alert(title: Text("Transaction confirmed"), message: Text("You sent $\(trans.amount) to \(trans.recipient)"), dismissButton: .default(Text("Done")))
 
 //            }
-            .navigationBarTitle("Pay or Request")
+                .navigationBarTitle("$\(paymentAmount)", displayMode: .inline)
             .navigationBarItems(
-                leading: picker,
                 trailing:
                 Button (action: {
 //                    let db = Firestore.firestore()
@@ -110,64 +99,10 @@ struct SendPayment: View {
 
                     UIApplication.shared.endEditing(true)
                 }) {
-                    Text("Send").bold()
+                    Text(self.paymentType).bold()
                 }
             )
         }.gesture(DragGesture().onChanged{_ in UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)})
-    }
-    
-    private var picker: some View {
-        Picker(selection: $selectedTab, label: Text("")) {
-            ForEach(0..<transactTypes.count) { index in
-                Text(self.transactTypes[index]).tag(index)
-            }
-        }
-        .pickerStyle(SegmentedPickerStyle())
-    }
-}
-
-extension UIApplication {
-    func endEditing() {
-        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}
-
-struct CustomTextField: UIViewRepresentable {
-
-    class Coordinator: NSObject, UITextFieldDelegate {
-
-        @Binding var text: String
-        var didBecomeFirstResponder = false
-
-        init(text: Binding<String>) {
-            _text = text
-        }
-
-        func textFieldDidChangeSelection(_ textField: UITextField) {
-            text = textField.text ?? ""
-        }
-
-    }
-
-    @Binding var text: String
-    var isFirstResponder: Bool = false
-
-    func makeUIView(context: UIViewRepresentableContext<CustomTextField>) -> UITextField {
-        let textField = UITextField(frame: .zero)
-        textField.delegate = context.coordinator
-        return textField
-    }
-
-    func makeCoordinator() -> CustomTextField.Coordinator {
-        return Coordinator(text: $text)
-    }
-
-    func updateUIView(_ uiView: UITextField, context: UIViewRepresentableContext<CustomTextField>) {
-        uiView.text = text
-        if isFirstResponder && !context.coordinator.didBecomeFirstResponder  {
-            uiView.becomeFirstResponder()
-            context.coordinator.didBecomeFirstResponder = true
-        }
     }
 }
 

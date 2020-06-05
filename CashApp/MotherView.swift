@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct MotherView: View {
     
@@ -34,7 +35,13 @@ struct MotherView: View {
                          Text("Dashboard")
                     }
                     
-                    SendPayment()
+//                    SendPayment()
+//                        .tabItem {
+//                            Image(systemName: "dollarsign.circle")
+//                            Text("Send")
+//                    }
+                    
+                    PaymentPage()
                         .tabItem {
                             Image(systemName: "dollarsign.circle")
                             Text("Send")

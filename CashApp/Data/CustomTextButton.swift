@@ -14,8 +14,9 @@ struct CustomTextButton: View {
     var body: some View {
         Text(text)
             .fontWeight(.bold)
-            .font(.system(size: 20))
+            .font(.system(size: 15))
             .foregroundColor(.blue)
+        .padding()
             .overlay(
                 RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.gray, lineWidth: 1)
