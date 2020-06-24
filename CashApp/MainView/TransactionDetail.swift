@@ -22,26 +22,24 @@ struct TransactionDetail: View {
     var transaction: Transaction
          
     var body: some View {
-            VStack (alignment: .leading) {
-                transactionPost.padding(.top, 20).padding(.leading, 20).padding(.trailing, 20)
-                
-                List {
-                    ForEach(posts) { post in
+        VStack (alignment: .leading) {
+            transactionPost.padding(.top, 20).padding(.leading, 20).padding(.trailing, 20)
+            
+            List {
+                ForEach(posts) { post in
+                    Text("\(post.comments)")
 
-                            Text("\(post.comments)")
-
-                    }.onDelete { indexSet in
-                        for index in indexSet {
-                            self.managedObjectContext.delete(self.posts[index])
-                        }
+                }.onDelete { indexSet in
+                    for index in indexSet {
+                        self.managedObjectContext.delete(self.posts[index])
                     }
                 }
-                
-                commentSection
-                
-            }.resignKeyboardOnDragGesture()
-        .navigationBarTitle("Payment", displayMode: .inline)
-
+            }
+            
+            commentSection
+            
+        }.resignKeyboardOnDragGesture()
+    .navigationBarTitle("Payment", displayMode: .inline)
     }
     
     

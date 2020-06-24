@@ -12,6 +12,7 @@ import Combine
 final class UserData: ObservableObject {
     @Published var transactions = transactionData
     @Published var friends = friendData
+    @Published var image: UIImage? = nil
     //include an instance of the user profile that persists even after the user dismisses the profile view
 }
 

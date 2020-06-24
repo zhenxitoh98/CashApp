@@ -10,6 +10,7 @@
 		7C57BE8A737386925F245C6B /* Pods_CashApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB829C76E14DFEB4604227D5 /* Pods_CashApp.framework */; };
 		CD0CA3022489548D004A64EE /* KeyboardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CA3012489548D004A64EE /* KeyboardItem.swift */; };
 		CD0CA304248A9F9B004A64EE /* SendPayment_V2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CA303248A9F9A004A64EE /* SendPayment_V2.swift */; };
+		CD0CA306248AEA92004A64EE /* QrCodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CA305248AEA92004A64EE /* QrCodeScanner.swift */; };
 		CD152220246B31550085A18E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD15221F246B31550085A18E /* Settings.swift */; };
 		CD152222246B368D0085A18E /* Incomplete.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD152221246B368D0085A18E /* Incomplete.swift */; };
 		CD152224246B4D7D0085A18E /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD152223246B4D7D0085A18E /* Notifications.swift */; };
@@ -53,7 +54,10 @@
 		CD41A2F02469B13D00085A88 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2EF2469B13D00085A88 /* MotherView.swift */; };
 		CD41A2F8246A2A8E00085A88 /* PaymentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2F7246A2A8D00085A88 /* PaymentPage.swift */; };
 		CD41A2FA246A3FF400085A88 /* SearchPeople.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41A2F9246A3FF400085A88 /* SearchPeople.swift */; };
-		CD54E77D24874C6500B944F0 /* QRCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E77C24874C6500B944F0 /* QRCodeGenerator.swift */; };
+		CD54E77D24874C6500B944F0 /* QrCodeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54E77C24874C6500B944F0 /* QrCodeGenerator.swift */; };
+		CD56C61D248DE18B008ED26E /* ItemDetailSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56C61C248DE18B008ED26E /* ItemDetailSource.swift */; };
+		CD56C620248EB740008ED26E /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56C61F248EB740008ED26E /* MailView.swift */; };
+		CD56C622248EBC5A008ED26E /* printOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD56C621248EBC5A008ED26E /* printOut.swift */; };
 		CD699DB0246F645F0058582D /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DAF246F645F0058582D /* AboutView.swift */; };
 		CD699DBE2470555F0058582D /* QrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DBD2470555F0058582D /* QrCode.swift */; };
 		CD699DC1247069C90058582D /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = CD699DC0247069C90058582D /* CodeScanner */; };
@@ -62,11 +66,8 @@
 		CD699DF12470C7F60058582D /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699DEF2470C7F60058582D /* Post+CoreDataClass.swift */; };
 		CD699E0624738B570058582D /* login.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E0524738B570058582D /* login.swift */; };
 		CD699E0A24738B700058582D /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E0924738B700058582D /* AuthView.swift */; };
-		CD699E0F24746DCC0058582D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E0E24746DCC0058582D /* PageViewController.swift */; };
-		CD699E1224746E960058582D /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1124746E960058582D /* ColorExt.swift */; };
-		CD699E1424746E9C0058582D /* UIApplicationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1324746E9B0058582D /* UIApplicationExt.swift */; };
-		CD699E1724746F880058582D /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1624746F880058582D /* Page.swift */; };
 		CD699E1D2474C0C10058582D /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD699E1C2474C0C10058582D /* SessionStore.swift */; };
+		CD8941B8249C493B00EFDB1E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8941B7249C493B00EFDB1E /* ImagePicker.swift */; };
 		CDCE5BD4247A216800319AD3 /* FriendLandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5BD3247A216800319AD3 /* FriendLandingPage.swift */; };
 		CDCE5BD8247B1BAB00319AD3 /* PersonalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5BD7247B1BAB00319AD3 /* PersonalDetail.swift */; };
 		CDCE5BDA247B242D00319AD3 /* FriendRequestList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */; };
@@ -82,6 +83,7 @@
 		9B03E421320F944F6ADD2493 /* Pods-CashApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CashApp.debug.xcconfig"; path = "Target Support Files/Pods-CashApp/Pods-CashApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0CA3012489548D004A64EE /* KeyboardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardItem.swift; sourceTree = "<group>"; };
 		CD0CA303248A9F9A004A64EE /* SendPayment_V2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPayment_V2.swift; sourceTree = "<group>"; };
+		CD0CA305248AEA92004A64EE /* QrCodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeScanner.swift; sourceTree = "<group>"; };
 		CD15221F246B31550085A18E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		CD152221246B368D0085A18E /* Incomplete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Incomplete.swift; sourceTree = "<group>"; };
 		CD152223246B4D7D0085A18E /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
@@ -127,7 +129,10 @@
 		CD41A2EF2469B13D00085A88 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		CD41A2F7246A2A8D00085A88 /* PaymentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentPage.swift; sourceTree = "<group>"; };
 		CD41A2F9246A3FF400085A88 /* SearchPeople.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPeople.swift; sourceTree = "<group>"; };
-		CD54E77C24874C6500B944F0 /* QRCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeGenerator.swift; sourceTree = "<group>"; };
+		CD54E77C24874C6500B944F0 /* QrCodeGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeGenerator.swift; sourceTree = "<group>"; };
+		CD56C61C248DE18B008ED26E /* ItemDetailSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailSource.swift; sourceTree = "<group>"; };
+		CD56C61F248EB740008ED26E /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
+		CD56C621248EBC5A008ED26E /* printOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printOut.swift; sourceTree = "<group>"; };
 		CD699DAF246F645F0058582D /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		CD699DBD2470555F0058582D /* QrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCode.swift; sourceTree = "<group>"; };
 		CD699DC52470C2120058582D /* CashApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CashApp.xcdatamodel; sourceTree = "<group>"; };
@@ -135,11 +140,8 @@
 		CD699DEF2470C7F60058582D /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
 		CD699E0524738B570058582D /* login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login.swift; sourceTree = "<group>"; };
 		CD699E0924738B700058582D /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		CD699E0E24746DCC0058582D /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		CD699E1124746E960058582D /* ColorExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
-		CD699E1324746E9B0058582D /* UIApplicationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExt.swift; sourceTree = "<group>"; };
-		CD699E1624746F880058582D /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		CD699E1C2474C0C10058582D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		CD8941B7249C493B00EFDB1E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		CDCE5BD3247A216800319AD3 /* FriendLandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendLandingPage.swift; sourceTree = "<group>"; };
 		CDCE5BD7247B1BAB00319AD3 /* PersonalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalDetail.swift; sourceTree = "<group>"; };
 		CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestList.swift; sourceTree = "<group>"; };
@@ -202,9 +204,7 @@
 		CD41A2932465F3D100085A88 /* CashApp */ = {
 			isa = PBXGroup;
 			children = (
-				CD699E1524746F6F0058582D /* Models */,
-				CD699E1024746E8D0058582D /* Extensions */,
-				CD699E0D24746DAB0058582D /* ViewControllers */,
+				CD56C61E248EAD6F008ED26E /* Set Up */,
 				CD699E022473378F0058582D /* CoreData */,
 				CD699DFB247336CA0058582D /* Misc */,
 				CD699DF82473363A0058582D /* Data */,
@@ -212,8 +212,6 @@
 				CD699DF6247335AA0058582D /* Menu */,
 				CD699DF5247335150058582D /* SearchFunction */,
 				CD699DF4247334AE0058582D /* MainView */,
-				CD41A2942465F3D100085A88 /* AppDelegate.swift */,
-				CD41A2962465F3D100085A88 /* SceneDelegate.swift */,
 				CD699E1C2474C0C10058582D /* SessionStore.swift */,
 				CD699DC42470C2120058582D /* CashApp.xcdatamodeld */,
 				CD41A2EF2469B13D00085A88 /* MotherView.swift */,
@@ -259,6 +257,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		CD56C61E248EAD6F008ED26E /* Set Up */ = {
+			isa = PBXGroup;
+			children = (
+				CD41A2942465F3D100085A88 /* AppDelegate.swift */,
+				CD41A2962465F3D100085A88 /* SceneDelegate.swift */,
+			);
+			path = "Set Up";
+			sourceTree = "<group>";
+		};
 		CD699DF4247334AE0058582D /* MainView */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,7 +287,8 @@
 				CDEB3A38247E0DD800DCAD54 /* AllUsers.swift */,
 				CDCE5BD9247B242D00319AD3 /* FriendRequestList.swift */,
 				CD699DBD2470555F0058582D /* QrCode.swift */,
-				CD54E77C24874C6500B944F0 /* QRCodeGenerator.swift */,
+				CD0CA305248AEA92004A64EE /* QrCodeScanner.swift */,
+				CD54E77C24874C6500B944F0 /* QrCodeGenerator.swift */,
 			);
 			path = SearchFunction;
 			sourceTree = "<group>";
@@ -305,8 +313,12 @@
 			children = (
 				CD41A2CF2465F42700085A88 /* ProfilePage.swift */,
 				CDF7D1CE24761111008EA9A1 /* EditProfile.swift */,
+				CD8941B7249C493B00EFDB1E /* ImagePicker.swift */,
 				CDCE5BD7247B1BAB00319AD3 /* PersonalDetail.swift */,
 				CD41A2DF24661F3400085A88 /* Profile.swift */,
+				CD56C621248EBC5A008ED26E /* printOut.swift */,
+				CD56C61F248EB740008ED26E /* MailView.swift */,
+				CD56C61C248DE18B008ED26E /* ItemDetailSource.swift */,
 				CD41A2DD24661CB300085A88 /* CircleImage.swift */,
 				CD41A2D52465F43700085A88 /* MapView.swift */,
 			);
@@ -342,31 +354,6 @@
 				CD699DEE2470C7F50058582D /* Post+CoreDataProperties.swift */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		CD699E0D24746DAB0058582D /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				CD699E0E24746DCC0058582D /* PageViewController.swift */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		CD699E1024746E8D0058582D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				CD699E1124746E960058582D /* ColorExt.swift */,
-				CD699E1324746E9B0058582D /* UIApplicationExt.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		CD699E1524746F6F0058582D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				CD699E1624746F880058582D /* Page.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,13 +499,13 @@
 				CD699DF12470C7F60058582D /* Post+CoreDataClass.swift in Sources */,
 				CD699DB0246F645F0058582D /* AboutView.swift in Sources */,
 				CD699DBE2470555F0058582D /* QrCode.swift in Sources */,
-				CD699E1224746E960058582D /* ColorExt.swift in Sources */,
 				CD41A2D02465F42700085A88 /* ProfilePage.swift in Sources */,
 				CD699E0624738B570058582D /* login.swift in Sources */,
 				CD41A2E024661F3400085A88 /* Profile.swift in Sources */,
 				CDCE5BD8247B1BAB00319AD3 /* PersonalDetail.swift in Sources */,
 				CDEB3A37247CAFB900DCAD54 /* ContactList.swift in Sources */,
 				CD41A2E424675F5400085A88 /* SendPayment.swift in Sources */,
+				CD8941B8249C493B00EFDB1E /* ImagePicker.swift in Sources */,
 				CDF7D1CF24761111008EA9A1 /* EditProfile.swift in Sources */,
 				CD152224246B4D7D0085A18E /* Notifications.swift in Sources */,
 				CDEB3A35247C7DA300DCAD54 /* CustomTextButton.swift in Sources */,
@@ -528,21 +515,23 @@
 				CD41A2E82467725900085A88 /* FriendRow.swift in Sources */,
 				CD41A2CE2465F42100085A88 /* UserData.swift in Sources */,
 				CD41A2F02469B13D00085A88 /* MotherView.swift in Sources */,
+				CD0CA306248AEA92004A64EE /* QrCodeScanner.swift in Sources */,
 				CD41A2DC2465F46C00085A88 /* Data.swift in Sources */,
 				CD152222246B368D0085A18E /* Incomplete.swift in Sources */,
 				CD699DC62470C2120058582D /* CashApp.xcdatamodeld in Sources */,
-				CD54E77D24874C6500B944F0 /* QRCodeGenerator.swift in Sources */,
+				CD54E77D24874C6500B944F0 /* QrCodeGenerator.swift in Sources */,
 				CD41A2F8246A2A8E00085A88 /* PaymentPage.swift in Sources */,
 				CD41A2FA246A3FF400085A88 /* SearchPeople.swift in Sources */,
+				CD56C620248EB740008ED26E /* MailView.swift in Sources */,
 				CD0CA3022489548D004A64EE /* KeyboardItem.swift in Sources */,
 				CD41A2D42465F43000085A88 /* MenuView.swift in Sources */,
-				CD699E1424746E9C0058582D /* UIApplicationExt.swift in Sources */,
 				CD699E1D2474C0C10058582D /* SessionStore.swift in Sources */,
 				CD41A2EA2467739B00085A88 /* Friend.swift in Sources */,
 				CD41A2CC2465F41900085A88 /* TransactionRow.swift in Sources */,
-				CD699E0F24746DCC0058582D /* PageViewController.swift in Sources */,
+				CD56C622248EBC5A008ED26E /* printOut.swift in Sources */,
 				CD41A2C82465F40000085A88 /* TransactionDetail.swift in Sources */,
 				CD152226246B4DEA0085A18E /* Purchases.swift in Sources */,
+				CD56C61D248DE18B008ED26E /* ItemDetailSource.swift in Sources */,
 				CDCE5BD4247A216800319AD3 /* FriendLandingPage.swift in Sources */,
 				CD699E0A24738B700058582D /* AuthView.swift in Sources */,
 				CD699DF02470C7F60058582D /* Post+CoreDataProperties.swift in Sources */,
@@ -552,7 +541,6 @@
 				CD41A2D22465F42C00085A88 /* RegistrationForm.swift in Sources */,
 				CD0CA304248A9F9B004A64EE /* SendPayment_V2.swift in Sources */,
 				CD41A2D82465F43B00085A88 /* MainPage.swift in Sources */,
-				CD699E1724746F880058582D /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

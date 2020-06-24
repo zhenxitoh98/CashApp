@@ -68,8 +68,6 @@ struct QrCode: View {
                         }
                     }
                     
-//                    Text("Scan")
-                
                     .navigationBarTitle("Scan", displayMode: .inline)
                     .navigationBarItems(leading:
                         Button(action: {

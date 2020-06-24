@@ -29,6 +29,10 @@ struct Settings: View {
     var body: some View {
         List {
             Section(header: Text("PREFERENCES").padding(.top, 25)) {
+                NavigationLink(destination: ImagePickerView()) {
+                    customText(img: "person.fill", text: "Image Picker")
+                }
+                
                 NavigationLink(destination: EditProfile()) {
                     customText(img: "person.fill", text: "Edit Profile")
                 }

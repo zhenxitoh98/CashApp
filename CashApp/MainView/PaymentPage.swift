@@ -76,8 +76,8 @@ struct PaymentPage: View {
                             .padding(10)
                     }
                     
-                    Spacer()
-                        .frame(width: 100)
+//                    Spacer()
+//                        .frame(width: 100)
                     
                     Button(action: {
                         self.isActive.toggle()
